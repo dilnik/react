@@ -1,6 +1,6 @@
 sudo: required
 services:
-	- docker
+    - docker
 before-install:
     - docker build -t bigfatdocker/docker-react2 -f Dockerfile.dev .
 script:
