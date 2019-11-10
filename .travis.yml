@@ -2,6 +2,6 @@ sudo: required
 services:
     - docker
 before-install:
-    - docker build -t bigfatdocker/react -f Dockerfile.dev .
+    - docker build -t my_image -f Dockerfile.dev .
 script:
-    - docker run -e CI=true bigfatdocker/react npm run test
+    - docker run -e CI=true my_image npm run test
